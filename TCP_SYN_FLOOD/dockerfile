@@ -1,0 +1,7 @@
+FROM ubuntu 
+ARG IP
+
+WORKDIR /app
+COPY . . 
+
+ENTRYPOINT [ "sh", "script.sh" ]
